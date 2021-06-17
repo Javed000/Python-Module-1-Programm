@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Array1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Array1.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np</span>
+<span class="s0">import </span><span class="s1">array </span><span class="s0">as </span><span class="s1">arr</span>
+<span class="s0">from </span><span class="s1">numpy </span><span class="s0">import </span><span class="s1">*</span>
+
+<span class="s1">arr1 = np.array([[</span><span class="s2">1</span><span class="s0">,</span><span class="s2">2</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">5</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s0">,</span><span class="s2">1</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s1">]</span><span class="s0">,</span>
+              <span class="s1">[</span><span class="s2">6</span><span class="s0">,</span><span class="s2">7</span><span class="s0">,</span><span class="s2">8</span><span class="s0">,</span><span class="s2">9</span><span class="s0">,</span><span class="s2">10</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s1">]])</span>
+<span class="s1">print(arr1)</span>
+<span class="s1">print(arr1.dtype)</span>
+<span class="s1">print(arr1.ndim)</span>
+<span class="s1">print(arr1.shape)</span>
+<span class="s1">print(arr1.min)</span>
+<span class="s1">print(arr1.max)</span>
+<span class="s1">print(arr1.size)</span>
+<span class="s1">arr2=arr1.copy()</span>
+<span class="s1">print(sum(arr1+arr2))</span>
+<span class="s1">arr2=arr1.flatten()</span>
+<span class="s1">print(arr2)</span>
+<span class="s1">print(arr2.ndim)</span>
+<span class="s1">print(arr2.dtype)</span>
+<span class="s1">arr3 =arr2.reshape(</span><span class="s2">3</span><span class="s0">,</span><span class="s2">6</span><span class="s1">)</span>
+<span class="s1">print(arr3)</span>
+</pre>
+</body>
+</html>

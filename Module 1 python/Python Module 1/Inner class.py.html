@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Inner class.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Inner class.py</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">employee():</span>
+    <span class="s1">increment=</span><span class="s2">1.7</span>
+    <span class="s0">def </span><span class="s1">__init__(self</span><span class="s0">,</span><span class="s1">fname</span><span class="s0">,</span><span class="s1">lname</span><span class="s0">,</span><span class="s1">salary):</span>
+        <span class="s1">self.fname = fname</span>
+        <span class="s1">self.lname = lname</span>
+        <span class="s1">self.salary = salary</span>
+        <span class="s1">self.lap = self.laptop()</span>
+
+
+    <span class="s0">def </span><span class="s1">increase(self):</span>
+        <span class="s1">self.salary = int(self.salary * employee.increment)</span>
+
+    <span class="s1">@classmethod</span>
+    <span class="s0">def </span><span class="s1">change_increment(cls</span><span class="s0">,</span><span class="s1">amount):</span>
+        <span class="s1">cls.increment = amount</span>
+
+    <span class="s0">class </span><span class="s1">laptop ():</span>
+        <span class="s0">def </span><span class="s1">__init__(self):</span>
+            <span class="s1">self.lapname = </span><span class="s3">'Lupoo'</span>
+            <span class="s1">self.type = </span><span class="s3">'i5'</span>
+            <span class="s1">self.brand = </span><span class="s3">'Lenovo'</span>
+
+
+<span class="s1">javed = employee(</span><span class="s3">'golu'</span><span class="s0">,</span><span class="s3">'khan'</span><span class="s0">,</span><span class="s2">40000</span><span class="s1">)</span>
+
+<span class="s1">print(javed.salary)</span>
+<span class="s1">javed.increase()</span>
+<span class="s1">print(javed.salary)</span>
+<span class="s1">employee.change_increment(</span><span class="s2">2.1</span><span class="s1">)</span>
+<span class="s1">javed.increase()</span>
+<span class="s1">print(javed.salary)</span>
+
+
+<span class="s1">print(javed.lap.brand)</span>
+
+<span class="s1">jazz1 = javed.lap</span>
+<span class="s1">jazz2 = javed.lap</span>
+<span class="s1">print(jazz1.lapname)</span>
+<span class="s1">print(javed.lap.type)</span>
+
+<span class="s1">print(id(jazz1))</span>
+
+<span class="s1">print(id(jazz2))</span>
+
+
+</pre>
+</body>
+</html>

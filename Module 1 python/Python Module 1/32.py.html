@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>32.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+32.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np</span>
+<span class="s0">from </span><span class="s1">numpy </span><span class="s0">import </span><span class="s1">*</span>
+<span class="s1">m1 = np.matrix(</span><span class="s2">'1 2 3 ; 4 5 6 ; 7 8 9 '</span><span class="s1">)</span>
+<span class="s1">print(m1)</span>
+<span class="s1">print(diagonal(m1))</span>
+<span class="s1">print(m1.min())</span>
+<span class="s1">print(m1.max())</span>
+<span class="s1">a = m1.flatten()</span>
+<span class="s1">print(a)</span>
+<span class="s1">b = m1.reshape(</span><span class="s3">3</span><span class="s0">, </span><span class="s3">3</span><span class="s1">)</span>
+<span class="s1">print(b)</span>
+<span class="s1">m2 = np.matrix(</span><span class="s2">'9 8 7 ; 6 5 4 ; 3 2 1 '</span><span class="s1">)</span>
+<span class="s1">m3 = m1 * m2</span>
+<span class="s1">print(m3)</span>
+<span class="s1">m4 = m1 + m2</span>
+<span class="s1">print(m4)</span>
+
+<span class="s1">m5 = np.matrix(</span><span class="s2">'1 2 3 ; 4 5 2 ; 7 7 9 '</span><span class="s1">)</span>
+<span class="s1">m8 = (m1*m2)*m5</span>
+<span class="s1">print(m8)</span>
+</pre>
+</body>
+</html>

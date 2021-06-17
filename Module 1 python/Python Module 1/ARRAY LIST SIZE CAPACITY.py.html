@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>ARRAY LIST SIZE CAPACITY.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ARRAY LIST SIZE CAPACITY.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">sys</span>
+<span class="s0">def </span><span class="s1">arraysize(list):</span>
+    <span class="s1">print(</span><span class="s2">'Capacity:'</span><span class="s0">, </span><span class="s1">sys.getsizeof(list))</span>
+
+    <span class="s1">print(</span><span class="s2">'Size:'</span><span class="s0">, </span><span class="s1">len(list))</span>
+
+    <span class="s1">print(</span><span class="s2">&quot;Space Left :&quot;</span><span class="s0">, </span><span class="s1">sys.getsizeof(list) - len(list))</span>
+
+
+<span class="s1">list = []</span>
+<span class="s1">print(</span><span class="s2">'Empty list is created'</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">'Details of a list'</span><span class="s1">)</span>
+<span class="s1">arraysize(list)</span>
+
+<span class="s1">print()</span>
+<span class="s1">list.append(</span><span class="s2">'Sugar'</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">'After Adding Sugar In A List'</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">'The Required List Is'</span><span class="s1">)</span>
+<span class="s1">print(list)</span>
+<span class="s1">arraysize(list)</span>
+
+
+<span class="s3"># If we want to add a new items in a list:</span>
+
+<span class="s1">list.insert(</span><span class="s4">0</span><span class="s0">,</span><span class="s2">'MILK'</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">'After insertion the required list is'</span><span class="s1">)</span>
+<span class="s1">print(list)</span>
+<span class="s1">arraysize(list)</span>
+
+
+<span class="s1">print()</span>
+<span class="s1">list.pop(</span><span class="s4">1</span><span class="s1">)</span>
+<span class="s1">print(</span><span class="s2">'After Deletion, The required list is'</span><span class="s1">)</span>
+<span class="s1">print(list)</span>
+<span class="s1">arraysize(list)</span>
+
+
+
+
+</pre>
+</body>
+</html>

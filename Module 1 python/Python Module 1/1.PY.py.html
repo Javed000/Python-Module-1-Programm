@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>1.PY.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+1.PY.py</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">node():</span>
+    <span class="s0">def </span><span class="s1">__init__(self</span><span class="s0">,</span><span class="s1">data):</span>
+        <span class="s1">self.data = data</span>
+        <span class="s1">self.next = </span><span class="s0">None</span>
+
+<span class="s0">class </span><span class="s1">linked_list():</span>
+    <span class="s0">def </span><span class="s1">__init__(self):</span>
+        <span class="s1">self.head = </span><span class="s0">None</span>
+
+    <span class="s0">def </span><span class="s1">display(self):</span>
+        <span class="s1">temp = self.head</span>
+        <span class="s0">if </span><span class="s1">temp == </span><span class="s0">None</span><span class="s1">:</span>
+            <span class="s1">print(</span><span class="s2">'Empty'</span><span class="s1">)</span>
+
+        <span class="s0">while </span><span class="s1">temp:</span>
+            <span class="s1">print(temp.data</span><span class="s0">,</span><span class="s2">&quot;--&gt;&quot;</span><span class="s0">,</span><span class="s1">end=</span><span class="s2">&quot; &quot;</span><span class="s1">)</span>
+            <span class="s1">print(temp.next)</span>
+            <span class="s1">temp = temp.next</span>
+
+<span class="s1">n1 = node(</span><span class="s3">10</span><span class="s1">)</span>
+<span class="s1">l =linked_list()</span>
+<span class="s1">l.head = n1</span>
+<span class="s1">n2 = node(</span><span class="s3">20</span><span class="s1">)</span>
+<span class="s1">n1.next = n2</span>
+<span class="s1">n3=node(</span><span class="s3">30</span><span class="s1">)</span>
+<span class="s1">n2.next =n3</span>
+<span class="s1">n4 = node(</span><span class="s3">40</span><span class="s1">)</span>
+<span class="s1">n3.next = n4</span>
+<span class="s1">n5= node(</span><span class="s3">50</span><span class="s1">)</span>
+<span class="s1">n4.next = n5</span>
+
+
+<span class="s1">l.display()</span>
+</pre>
+</body>
+</html>

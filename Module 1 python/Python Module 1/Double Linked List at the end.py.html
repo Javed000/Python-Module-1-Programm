@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Double Linked List at the end.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Double Linked List at the end.py</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">node():</span>
+    <span class="s0">def </span><span class="s1">__init__(self</span><span class="s0">,</span><span class="s1">data):</span>
+        <span class="s1">self.data = data</span>
+        <span class="s1">self.next = </span><span class="s0">None</span>
+        <span class="s1">self.prev = </span><span class="s0">None</span>
+
+
+<span class="s0">class </span><span class="s1">dll():</span>
+    <span class="s0">def </span><span class="s1">__init__(self):</span>
+        <span class="s1">self.head = </span><span class="s0">None</span>
+
+    <span class="s0">def </span><span class="s1">insert_at_end(self</span><span class="s0">,</span><span class="s1">data):</span>
+        <span class="s1">ne = node(data)</span>
+        <span class="s1">temp = self.head</span>
+        <span class="s0">while </span><span class="s1">temp.next:</span>
+            <span class="s1">temp = temp.next</span>
+
+        <span class="s1">temp.next = ne</span>
+        <span class="s1">ne.prev = temp</span>
+
+
+
+    <span class="s0">def </span><span class="s1">display(self):</span>
+        <span class="s0">if </span><span class="s1">self.head == </span><span class="s0">None</span><span class="s1">:</span>
+            <span class="s1">print(</span><span class="s2">&quot;Empty Double Linked List&quot;</span><span class="s1">)</span>
+
+        <span class="s1">temp = self.head</span>
+        <span class="s0">while </span><span class="s1">temp:</span>
+            <span class="s1">print(temp.data</span><span class="s0">,</span><span class="s2">&quot;--&gt;&quot;</span><span class="s0">,</span><span class="s1">end=</span><span class="s2">&quot;&quot;</span><span class="s1">)</span>
+            <span class="s1">temp = temp.next</span>
+
+
+
+
+<span class="s1">n1 = node(</span><span class="s3">100</span><span class="s1">)</span>
+<span class="s1">l = dll()</span>
+<span class="s1">l.head = n1</span>
+<span class="s1">n2 = node(</span><span class="s3">200</span><span class="s1">)</span>
+<span class="s1">n1.next = n2</span>
+<span class="s1">n2.prev = n1</span>
+<span class="s1">n3 = node(</span><span class="s3">300</span><span class="s1">)</span>
+<span class="s1">n2.next = n3</span>
+<span class="s1">n3.prev = n2</span>
+<span class="s1">l.insert_at_end(</span><span class="s3">50</span><span class="s1">)</span>
+<span class="s1">l.display()</span>
+
+</pre>
+</body>
+</html>

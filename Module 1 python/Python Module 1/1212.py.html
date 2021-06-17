@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>1212.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+1212.py</font>
+</center></td></tr></table>
+<pre>
+
+
+<span class="s1">class </span><span class="s0">Solution(object):</span>
+    <span class="s1">def </span><span class="s0">twoSum(self</span><span class="s1">, </span><span class="s0">nums</span><span class="s1">, </span><span class="s0">target):</span>
+        <span class="s0">dictionary = dict()</span>
+        <span class="s0">pos = </span><span class="s2">0</span>
+        <span class="s1">while </span><span class="s0">pos &lt; len(nums):</span>
+            <span class="s1">if </span><span class="s0">(target - nums[pos]) </span><span class="s1">not in </span><span class="s0">dictionary:</span>
+                <span class="s0">dictionary[nums[pos]] = pos</span>
+                <span class="s0">pos += </span><span class="s2">1</span>
+        <span class="s1">else</span><span class="s0">:</span>
+             <span class="s1">return </span><span class="s0">[dictionary[target - nums[pos]]</span><span class="s1">, </span><span class="s0">pos]</span></pre>
+</body>
+</html>
